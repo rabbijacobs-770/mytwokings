@@ -53,6 +53,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero{background:linear-gradient(var(--sky-deep),var(--sky) 60%);padding-block:28px 0;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center}
 .hero h1{font-size:clamp(40px,7vw,72px);color:var(--royal-ink)}
+.brandlogo{height:34px;width:auto;display:block}
+.hero h1 .herologo{display:block;width:min(100%,600px);height:auto;margin-top:10px}
 .hero h1 em{font-style:normal;color:var(--white);-webkit-text-stroke:0;text-shadow:0 3px 0 var(--royal),0 6px 14px rgba(23,35,94,.25)}
 .hero p.lead{font-size:21px;margin-top:14px;max-width:34ch;color:var(--royal-ink)}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
@@ -204,7 +206,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
 <div class="bar"><div class="wrap">
   <a class="brand" href="#top" aria-label="Two Kings – back to top">
     <svg viewBox="0 0 60 40" aria-hidden="true"><path d="M6 34 L3 8 L18 20 L30 4 L42 20 L57 8 L54 34 Z" fill="#e9b21b" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
-    Two Kings
+    <img class="brandlogo" src="logo-en.png" alt="Two Kings">
   </a>
   <nav class="nav">
     <a href="#idea">The Idea</a><a href="#game">Game</a><a href="#books">Books</a><a href="#teachers">For Teachers</a><a href="#free">Free Downloads</a><a class="cta" href="#puppets">Order Puppets</a><a class="lang" href="./" lang="he" hreflang="he">עברית</a>
@@ -215,7 +217,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
   <div class="wrap">
     <div>
       <div class="eyebrow" style="color:var(--royal)">Books • Puppets • Classroom Kits</div>
-      <h1>Everyone has <em>Two Kings</em></h1>
+      <h1>Everyone has <img class="herologo" src="logo-en.png" alt="Two Kings"></h1>
       <p class="lead">A good king and a bad king, battling over a “little city”: our heart. A series of books and puppets that teaches children to stop, think, and choose good.</p>
       <div class="btns"><a class="btn gold" href="#puppets">Classroom puppets – ₪110 a pair</a><a class="btn line" href="#free">Printable pages – free</a></div>
     </div>
