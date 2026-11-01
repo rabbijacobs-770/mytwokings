@@ -52,6 +52,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero{background:linear-gradient(var(--sky-deep),var(--sky) 60%);padding-block:28px 0;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center}
 .hero h1{font-size:clamp(40px,7vw,72px);color:var(--royal-ink)}
+.brandlogo{height:38px;width:auto;display:block}
+.hero h1 .herologo{display:block;width:min(100%,560px);height:auto;margin-top:10px}
 .hero h1 em{font-style:normal;color:var(--white);-webkit-text-stroke:0;text-shadow:0 3px 0 var(--royal),0 6px 14px rgba(23,35,94,.25)}
 .hero p.lead{font-size:21px;margin-top:14px;max-width:34ch;color:var(--royal-ink)}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
@@ -201,7 +203,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
 <div class="bar"><div class="wrap">
   <a class="brand" href="#top" aria-label="שני מלכים – לראש העמוד">
     <svg viewBox="0 0 60 40" aria-hidden="true"><path d="M6 34 L3 8 L18 20 L30 4 L42 20 L57 8 L54 34 Z" fill="#e9b21b" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
-    שני מלכים
+    <img class="brandlogo" src="logo-he.png" alt="שני מלכים">
   </a>
   <nav class="nav">
     <a href="#idea">הרעיון</a><a href="#game">משחק</a><a href="#books">הספרים</a><a href="#teachers">לגננות</a><a href="#free">הורדה חינם</a><a class="cta" href="#puppets">להזמנת בובות</a><a class="lang" href="en.html" lang="en" hreflang="en">English</a>
@@ -212,7 +214,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
   <div class="wrap">
     <div>
       <div class="eyebrow" style="color:var(--royal)">ספרים • בובות • ערכות לגן</div>
-      <h1>לכל אחד ואחת יש <em>שני מלכים</em></h1>
+      <h1>לכל אחד ואחת יש <img class="herologo" src="logo-he.png" alt="שני מלכים"></h1>
       <p class="lead">מלך טוב ומלך רע, שנלחמים על "עיר קטנה" – הלב שלנו. סדרת ספרים ובובות שמלמדת ילדים לעצור, לחשוב ולבחור בטוב.</p>
       <div class="btns"><a class="btn gold" href="#puppets">בובות לגן – 110 ₪ לזוג</a><a class="btn line" href="#free">דפים להדפסה – חינם</a></div>
     </div>
@@ -274,8 +276,8 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
     <p style="margin-top:8px;max-width:60ch">מאת הרב פישל ג'ייקובס. בכל ספר ילד אחר מתמודד עם בחירה מהחיים – והמלכים "מתווכחים" בתוך הלב שלו.</p>
     <div class="books">
       <article class="book">
-        <div class="cover"><img src="book1.jpg" alt="כריכת הספר שני מלכים – בוא לשחק"></div>
-        <div class="in"><span class="tag">ספר 1</span><h3>בוא לשחק</h3><p>אמא ביקשה מדוד לשמור על אחותו התינוקת, והחברים קוראים לו לשחק בחוץ. מה יעשה?</p></div>
+        <div class="cover"><img src="book1-he.jpg" alt="כריכת הספר שני מלכים 1 – בוא נלך לשחק"></div>
+        <div class="in"><span class="tag">ספר 1</span><h3>בוא נלך לשחק</h3><p>אמא ביקשה מדוד לשמור על אחותו התינוקת, והחברים קוראים לו לשחק בחוץ. מה יעשה?</p></div>
       </article>
       <article class="book">
         <div class="cover"><img src="book2-he.jpg" alt="כריכת הספר שני מלכים 2 – עכשיו תורי"></div>
