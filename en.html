@@ -184,6 +184,8 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
 .vb{font-family:var(--body);font-weight:800;font-size:14px;border:2px solid var(--royal);border-radius:999px;padding:4px 12px;background:var(--white);color:var(--royal);cursor:pointer;white-space:nowrap}
 .kitbox .row{display:flex;flex-wrap:wrap;gap:10px}
 .kitbox .vb{border-color:var(--gold);background:transparent;color:var(--white);font-size:16px;padding:8px 16px}
+.kitbox a.vb{text-decoration:none;display:inline-flex;align-items:center}
+.kitbox .printnote{font-size:14px;opacity:.85;margin-top:8px}
 .viewer{position:fixed;inset:0;z-index:50;background:rgba(15,20,50,.92);display:flex;flex-direction:column;
   padding:max(12px,env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) max(12px,env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
 .viewer[hidden]{display:none}
@@ -348,7 +350,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
     <h2>Free downloads – every page</h2>
     <p style="margin-top:8px;max-width:62ch">All the Two Kings pages are open to download, print and share, at school, in preschool and at home. Click <b>Preview</b> to see each page before downloading. Every page is US Letter size (8.5 × 11 in). Pages marked <b>color</b> look best printed in color and laminated.</p>
     <div class="allkits">
-      <div class="kitbox"><h3>Classroom Activities Kit (preschool and 1st grade)</h3><p>10 pages: crown, stick puppets, Who said it?, board game, crown chart, certificate, writing page and a teacher’s guide</p><div class="row"><button class="vb" type="button" data-kit="1">Preview all pages</button><button class="dlb" type="button" data-f="kit1-all.pdf" data-n="Two Kings - Classroom Activities (10 pages).pdf">Download the full kit</button></div></div>
+      <div class="kitbox"><h3>Classroom Activities Kit (preschool and 1st grade)</h3><p>10 pages: crown, stick puppets, Who said it?, board game, crown chart, certificate, writing page and a teacher’s guide</p><div class="row"><button class="vb" type="button" data-kit="1">Preview all pages</button><button class="dlb" type="button" data-f="kit1-all.pdf" data-n="Two Kings - Classroom Activities (10 pages).pdf">Download the full kit</button><a class="vb" href="https://www.lulu.com/shop/rabbi-fishel-jacobs/two-kings-classroom-kit-1/paperback/product-5757kzd.html" target="_blank" rel="noopener">Order a printed copy</a></div><p class="printnote">Printed and coil-bound by Lulu, shipped to you.</p></div>
       <div class="kitbox"><h3>Teacher &amp; Wall Kit</h3><p>16 pages: wall posters, situation cards, badges, stickers, a weekly plan and a letter to parents</p><div class="row"><button class="vb" type="button" data-kit="2">Preview all pages</button><button class="dlb" type="button" data-f="kit2-all.pdf" data-n="Two Kings - Teacher and Wall Kit (16 pages).pdf">Download the full kit</button></div></div>
     </div>
     <div class="groups" id="groups"></div>
