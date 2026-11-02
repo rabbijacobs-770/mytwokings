@@ -79,6 +79,10 @@ section{padding-block:64px}
 
 /* parable */
 .parable{background:var(--stone)}
+.song{background:var(--stone);padding-top:8px}
+.song .vid{margin-top:18px;border-radius:18px;overflow:hidden;border:4px solid var(--gold);box-shadow:0 10px 30px rgba(23,35,94,.18);background:#000;aspect-ratio:16/9}
+.song video{display:block;width:100%;height:100%}
+
 .parable .grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
 .quote{background:var(--parchment);border-radius:18px;padding:22px 24px;font-size:19px;line-height:1.8;position:relative}
 .quote cite{display:block;font-style:normal;font-weight:800;color:var(--crimson);font-size:15px;margin-top:8px}
@@ -250,6 +254,13 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
       <div class="step"><b>Think</b>what is each king saying?</div>
       <div class="step"><b>Choose</b>the Good King!</div>
     </div>
+  </div>
+</section>
+<section class="song" id="song">
+  <div class="wrap">
+    <div class="eyebrow">The Two Kings Song</div>
+    <h2>Meet the Two Kings</h2>
+    <div class="vid"><video controls playsinline preload="metadata" poster="jingle-poster.jpg"><source src="jingle-en.mp4" type="video/mp4">Your browser can’t play this video.</video></div>
   </div>
 </section>
 <div class="wall dark" style="background-color:var(--stone)"></div>
