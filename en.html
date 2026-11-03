@@ -1,6 +1,6 @@
 <!doctype html><html lang="en" dir="ltr"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Two Kings</title>
-<meta name="description" content="Two Kings: books, puppets and free printable classroom pages that teach children to stop, think, and choose good.">
+<meta name="description" content="Two Kings: a series of books, puppets and activities that teach children to stop, think, and choose good.">
 <link rel="alternate" hreflang="he" href="https://mytwokings.com/">
 <link rel="alternate" hreflang="en" href="https://mytwokings.com/en.html">
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -112,7 +112,9 @@ section{padding-block:64px}
 .game h2{color:var(--white)}
 .game .eyebrow{color:var(--gold)}
 .board{margin-top:24px;background:var(--royal);border-radius:24px;padding:24px;display:grid;gap:18px}
-.bubble{background:var(--white);color:var(--ink);font-size:clamp(20px,3.4vw,28px);font-weight:800;border-radius:28px;padding:20px 24px;text-align:center;min-height:96px;display:flex;align-items:center;justify-content:center}
+.bubble{background:var(--white);color:var(--ink);font-size:clamp(20px,3.4vw,28px);font-weight:800;border-radius:28px;padding:20px 24px;text-align:center;min-height:96px;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center}
+.gpic svg{display:block;width:150px;height:auto}
+.pnote{margin:0;font-size:16px;font-weight:700;color:var(--gold-soft);text-align:center}
 .choices{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .choice{display:flex;align-items:center;justify-content:center;gap:12px;font-family:var(--body);font-weight:800;font-size:19px;border:0;border-radius:999px;padding:10px 16px;cursor:pointer;background:var(--parchment);color:var(--royal-ink)}
 .choice img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 50%;background:#fff8e8;border:3px solid var(--gold)}
@@ -231,8 +233,8 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
     <div>
       <div class="eyebrow" style="color:var(--royal)">Books • Puppets • Classroom Kits</div>
       <h1>Everyone has <img class="herologo" src="logo-en.png" alt="Two Kings"></h1>
-      <p class="lead">A good king and a bad king, battling over a “little city”: our heart. A series of books and puppets that teaches children to stop, think, and choose good.</p>
-      <div class="btns"><a class="btn gold" href="#puppets">Classroom puppets – ₪90 a pair</a><a class="btn line" href="#free">Printable pages – free</a></div>
+      <p class="lead">A good king and a bad king, battling over a “little city”: our heart. A series of books, puppets and activities that teach children to stop, think, and choose good.</p>
+      <div class="btns"><a class="btn gold" href="#puppets">Classroom puppets – $40 a pair</a><a class="btn line" href="#free">Printable pages – free</a></div>
     </div>
     <div class="scene"><img src="scene-en.jpg" alt="The Good King and the Bad King standing before the city gate"></div>
   </div>
@@ -280,7 +282,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
     <p style="margin-top:8px;color:var(--gold-soft)">Read the sentence and choose: the Good King or the Bad King? (A great game to play with children.)</p>
     <div class="board" aria-live="polite">
       <div class="score"><span id="count">Sentence 1 of 8</span><span id="pts">Points: 0</span></div>
-      <div class="bubble" id="line">…</div>
+      <div class="bubble"><div class="gpic" id="gpic" aria-hidden="true"></div><div id="line">…</div></div>
       <div class="choices">
         <button class="choice" id="pickGood" type="button"><img src="gk.png" alt="">The Good King</button>
         <button class="choice bad" id="pickBad" type="button"><img src="bk.png" alt="">The Bad King</button>
@@ -296,7 +298,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
   <div class="wrap">
     <div class="eyebrow">The Books</div>
     <h2>The Two Kings series</h2>
-    <p style="margin-top:8px;max-width:60ch">By Rabbi Fishel Jacobs. In each book a different child faces a real-life choice, and the two kings “argue” inside his heart.</p>
+    <p style="margin-top:8px;max-width:60ch">By Rabbi Fishel Jacobs. In each book David faces a real-life choice, and the two kings “argue” inside his heart.</p>
     <div class="books">
       <article class="book">
         <div class="cover"><img src="book1.jpg" alt="Cover of Two Kings: Let’s Go Play"></div>
@@ -313,7 +315,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
     </div>
     <div id="dream-videos">
       <h3 style="margin-top:34px;font-size:28px">Listen to The Dream</h3>
-      <p style="margin-top:4px">The whole rhyme, with the book’s pictures and the words on screen.</p>
+      <p style="margin-top:4px">The Grandpa Bedside Tale rhyme.</p>
       <div class="dreamvids">
         <figure><div class="vid"><video controls playsinline preload="metadata" poster="dream-full-poster.jpg?v=3"><source src="dream-full.mp4?v=2" type="video/mp4">Your browser can’t play this video.</video></div><figcaption>Grandpa Bedside Tale <span>· 4 minutes</span></figcaption></figure>
       </div>
@@ -345,7 +347,8 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
       </ul>
     </div>
     <div class="price">
-      <div class="num">₪90 <small>for a pair of puppets</small></div>
+      <div class="num">$40 <small>for a pair of puppets</small></div>
+      <p class="pnote">(Newly arrived, not shipping to outside Israel, yet.)</p>
       <ul>
         <li>A Good King puppet and a Bad King puppet</li>
         <li>The full set of printable pages – <b>free to download</b> on this site</li>
@@ -359,7 +362,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
 <section class="teachers" id="teachers">
   <div class="wrap">
     <div class="eyebrow">For Teachers</div>
-    <h2>A ready-to-print kit</h2>
+    <h2>Ready-to-print kits!</h2>
     <p style="margin-top:8px;max-width:62ch">Everything you need to bring the Two Kings into your classroom: color wall posters, situation cards for role-play, a board game, badges, charts and certificates, all in US Letter size.</p>
     <div class="kit">
       <figure><img src="k_poster-en.jpg" alt="Stop, think, choose poster"><figcaption>Classroom poster</figcaption></figure>
@@ -403,7 +406,7 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
 <section class="contact" id="contact">
   <div class="wrap">
     <h2>Orders and information</h2>
-    <p style="margin-top:8px;color:var(--gold-soft)">Rabbi Fishel Jacobs – puppets, books, and story visits to preschools</p>
+    <p style="margin-top:8px;color:var(--gold-soft)">Rabbi Fishel Jacobs – books, puppets, activities, everything Two Kings!</p>
     <div class="cards">
       <div class="cc"><span>Phone / WhatsApp</span><span class="val" id="phone"><a href="https://wa.me/972587921788" target="_blank" rel="noopener" style="color:inherit">+972-58-792-1788</a></span><button type="button" data-copy="phone">Copy</button></div>
       <div class="cc"><span>Email</span><span class="val" id="mail">RabbiJacobs@FamilyPurity.com</span><button type="button" data-copy="mail">Copy</button></div>
@@ -429,10 +432,11 @@ footer{background:var(--royal-ink);color:var(--gold-soft);font-size:14px;padding
     ["First we help Mommy set the table.","g"],
     ["Push ahead, and you’ll be first in line!","b"]
   ];
+  var pics=["<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#fde9ef\"/><rect x=\"40\" y=\"38\" width=\"44\" height=\"24\" rx=\"4\" fill=\"#fff\" stroke=\"#24378f\" stroke-width=\"2.5\"/><line x1=\"50\" y1=\"38\" x2=\"50\" y2=\"62\" stroke=\"#24378f\" stroke-width=\"2\"/><line x1=\"60\" y1=\"38\" x2=\"60\" y2=\"62\" stroke=\"#24378f\" stroke-width=\"2\"/><line x1=\"70\" y1=\"38\" x2=\"70\" y2=\"62\" stroke=\"#24378f\" stroke-width=\"2\"/><line x1=\"40\" y1=\"62\" x2=\"40\" y2=\"70\" stroke=\"#24378f\" stroke-width=\"3\"/><line x1=\"84\" y1=\"62\" x2=\"84\" y2=\"70\" stroke=\"#24378f\" stroke-width=\"3\"/><circle cx=\"62\" cy=\"33\" r=\"8\" fill=\"#f6d2b0\"/><path d=\"M58 33q1.5 1.5 3 0M63 33q1.5 1.5 3 0\" stroke=\"#2a2620\" stroke-width=\"1.2\" fill=\"none\"/><text x=\"92\" y=\"28\" font-size=\"14\" fill=\"#7fc0ee\">z</text><text x=\"99\" y=\"20\" font-size=\"11\" fill=\"#7fc0ee\">z</text><circle cx=\"22\" cy=\"44\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M13 42q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"19\" cy=\"44\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"25\" cy=\"44\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M19 48q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M12 68q0-14 10-14t10 14z\" fill=\"#3c8d4a\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#d9eefc\"/><circle cx=\"98\" cy=\"18\" r=\"9\" fill=\"#e9b21b\"/><rect y=\"62\" width=\"120\" height=\"18\" fill=\"#7cc36b\"/><path d=\"M0 62h120\" stroke=\"#5aa64c\" stroke-width=\"2\"/><circle cx=\"76\" cy=\"56\" r=\"8\" fill=\"#b5212b\"/><path d=\"M68 56h16M76 48v16\" stroke=\"#fff\" stroke-width=\"1.6\"/><circle cx=\"36\" cy=\"34\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M27 32q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"33\" cy=\"34\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"39\" cy=\"34\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M33 38q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M26 58q0-14 10-14t10 14z\" fill=\"#3c8d4a\"/><circle cx=\"100\" cy=\"40\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M91 38q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#e0a43a\"/><circle cx=\"97\" cy=\"40\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"103\" cy=\"40\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M97 44q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M90 64q0-14 10-14t10 14z\" fill=\"#24378f\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#fff3d6\"/><circle cx=\"26\" cy=\"34\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M17 32q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"23\" cy=\"34\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"29\" cy=\"34\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M23 38q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M16 58q0-14 10-14t10 14z\" fill=\"#3c8d4a\"/><circle cx=\"94\" cy=\"34\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M85 32q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#2a2620\"/><circle cx=\"91\" cy=\"34\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"97\" cy=\"34\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M91 38q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M84 58q0-14 10-14t10 14z\" fill=\"#b5212b\"/><circle cx=\"60\" cy=\"48\" r=\"9\" fill=\"#b07a45\"/><circle cx=\"53\" cy=\"40\" r=\"4\" fill=\"#b07a45\"/><circle cx=\"67\" cy=\"40\" r=\"4\" fill=\"#b07a45\"/><circle cx=\"60\" cy=\"38\" r=\"7\" fill=\"#c08a55\"/><circle cx=\"57.5\" cy=\"37\" r=\"1\" fill=\"#2a2620\"/><circle cx=\"62.5\" cy=\"37\" r=\"1\" fill=\"#2a2620\"/><path d=\"M58 20q8-6 16 0\" stroke=\"#e9b21b\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M72 16l3 4-5 1\" stroke=\"#e9b21b\" stroke-width=\"2.5\" fill=\"none\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#ece6f7\"/><rect x=\"50\" y=\"36\" width=\"46\" height=\"30\" rx=\"4\" fill=\"#e9b21b\" stroke=\"#17235e\" stroke-width=\"2.5\"/><rect x=\"50\" y=\"30\" width=\"46\" height=\"9\" rx=\"3\" fill=\"#f3c94a\" stroke=\"#17235e\" stroke-width=\"2.5\"/><rect x=\"66\" y=\"44\" width=\"14\" height=\"12\" rx=\"2\" fill=\"#6a6152\"/><path d=\"M69 44v-4q4-6 8 0v4\" stroke=\"#6a6152\" stroke-width=\"2.5\" fill=\"none\"/><circle cx=\"28\" cy=\"36\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M19 34q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"25\" cy=\"36\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"31\" cy=\"36\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M25 40q3 -2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M18 60q0-14 10-14t10 14z\" fill=\"#3c8d4a\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#fde9ef\"/><circle cx=\"36\" cy=\"36\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M27 34q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"33\" cy=\"36\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"39\" cy=\"36\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M33 40q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M26 60q0-14 10-14t10 14z\" fill=\"#3c8d4a\"/><circle cx=\"84\" cy=\"36\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M75 34q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#e0a43a\"/><circle cx=\"81\" cy=\"36\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"87\" cy=\"36\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M81 40q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M74 60q0-14 10-14t10 14z\" fill=\"#24378f\"/><path d=\"M60 30c-3-6-11-3-8 3l8 8 8-8c3-6-5-9-8-3z\" fill=\"#b5212b\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#24378f\"/><circle cx=\"100\" cy=\"16\" r=\"7\" fill=\"#fbe7a6\"/><circle cx=\"103\" cy=\"14\" r=\"6\" fill=\"#24378f\"/><circle cx=\"20\" cy=\"14\" r=\"1.5\" fill=\"#fff\"/><circle cx=\"38\" cy=\"22\" r=\"1.2\" fill=\"#fff\"/><circle cx=\"84\" cy=\"26\" r=\"1.2\" fill=\"#fff\"/><rect x=\"52\" y=\"28\" width=\"46\" height=\"32\" rx=\"4\" fill=\"#17235e\" stroke=\"#fbe7a6\" stroke-width=\"2.5\"/><rect x=\"56\" y=\"32\" width=\"38\" height=\"24\" rx=\"2\" fill=\"#7fc0ee\"/><path d=\"M68 66l7-6 7 6\" stroke=\"#fbe7a6\" stroke-width=\"2.5\" fill=\"none\"/><circle cx=\"26\" cy=\"40\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M17 38q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"23\" cy=\"40\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"29\" cy=\"40\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M23 44q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M16 64q0-14 10-14t10 14z\" fill=\"#e9b21b\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#fff3d6\"/><rect x=\"20\" y=\"48\" width=\"80\" height=\"6\" rx=\"2\" fill=\"#b07a45\"/><line x1=\"28\" y1=\"54\" x2=\"28\" y2=\"74\" stroke=\"#b07a45\" stroke-width=\"4\"/><line x1=\"92\" y1=\"54\" x2=\"92\" y2=\"74\" stroke=\"#b07a45\" stroke-width=\"4\"/><ellipse cx=\"40\" cy=\"45\" rx=\"9\" ry=\"3\" fill=\"#fff\" stroke=\"#24378f\" stroke-width=\"1.5\"/><ellipse cx=\"80\" cy=\"45\" rx=\"9\" ry=\"3\" fill=\"#fff\" stroke=\"#24378f\" stroke-width=\"1.5\"/><rect x=\"57\" y=\"36\" width=\"7\" height=\"10\" rx=\"1\" fill=\"#d9eefc\" stroke=\"#24378f\" stroke-width=\"1.5\"/><path d=\"M28 46v-9M31 46v-9M28 41h3\" stroke=\"#6a6152\" stroke-width=\"1.4\"/><path d=\"M93 46v-10\" stroke=\"#6a6152\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"14\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M51 12q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"57\" cy=\"14\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"63\" cy=\"14\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M57 18q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M50 38q0-14 10-14t10 14z\" opacity=\"0\" fill=\"#3c8d4a\"/></svg>", "<svg viewBox=\"0 0 120 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"120\" height=\"80\" rx=\"14\" fill=\"#d9eefc\"/><rect y=\"64\" width=\"120\" height=\"16\" fill=\"#7cc36b\"/><path d=\"M96 10v54M114 10v54M94 10h22\" stroke=\"#b5212b\" stroke-width=\"3\"/><path d=\"M101 10v30M109 10v30\" stroke=\"#6a6152\" stroke-width=\"1.5\"/><rect x=\"99\" y=\"40\" width=\"12\" height=\"3\" fill=\"#e9b21b\"/><circle cx=\"18\" cy=\"42\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M9 40q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#2a2620\"/><circle cx=\"15\" cy=\"42\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"21\" cy=\"42\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M15 46q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M8 66q0-14 10-14t10 14z\" fill=\"#b5212b\"/><circle cx=\"42\" cy=\"42\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M33 40q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#e0a43a\"/><circle cx=\"39\" cy=\"42\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"45\" cy=\"42\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M39 46q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M32 66q0-14 10-14t10 14z\" fill=\"#24378f\"/><circle cx=\"66\" cy=\"42\" r=\"9\" fill=\"#f6d2b0\"/><path d=\"M57 40q0-10 9-10t9 10q-4-5-9-5t-9 5z\" fill=\"#6b3f1f\"/><circle cx=\"63\" cy=\"42\" r=\"1.2\" fill=\"#2a2620\"/><circle cx=\"69\" cy=\"42\" r=\"1.2\" fill=\"#2a2620\"/><path d=\"M63 46q3 2.5 6 0\" stroke=\"#2a2620\" stroke-width=\"1.3\" fill=\"none\"/><path d=\"M56 66q0-14 10-14t10 14z\" fill=\"#3c8d4a\"/><path d=\"M8 20l6 4M10 14l3 6\" stroke=\"#e9b21b\" stroke-width=\"2\"/></svg>"];
   var i=0,pts=0,answered=false;
   var $=function(id){return document.getElementById(id)};
   function show(){
-    answered=false;$("line").textContent=lines[i][0];
+    answered=false;$("line").textContent=lines[i][0];$("gpic").innerHTML=pics[i];
     $("count").textContent="Sentence "+(i+1)+" of "+lines.length;
     $("fb").textContent="";$("next").hidden=true;
   }
